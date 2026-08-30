@@ -1,0 +1,6 @@
+aws_region="ap-south-1"
+project_name="octabyte-devops"
+instance_type="t3.micro"
+db_instance_class="db.t3.micro"
+db_name="appdb"
+db_username="appuser"
