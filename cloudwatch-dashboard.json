@@ -1,0 +1,52 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0, "y": 0, "width": 12, "height": 6,
+      "properties": {
+        "title": "ALB Request Count",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [["AWS/ApplicationELB","RequestCount","LoadBalancer","REPLACE_WITH_ALB_DIMENSION"]],
+        "period": 300,
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12, "y": 0, "width": 12, "height": 6,
+      "properties": {
+        "title": "ALB Target Response Time",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [["AWS/ApplicationELB","TargetResponseTime","LoadBalancer","REPLACE_WITH_ALB_DIMENSION"]],
+        "period": 300,
+        "stat": "Average"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0, "y": 6, "width": 12, "height": 6,
+      "properties": {
+        "title": "EC2 CPU",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [["AWS/EC2","CPUUtilization","AutoScalingGroupName","REPLACE_WITH_ASG_NAME"]],
+        "period": 300,
+        "stat": "Average"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12, "y": 6, "width": 12, "height": 6,
+      "properties": {
+        "title": "RDS CPU",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [["AWS/RDS","CPUUtilization","DBInstanceIdentifier","REPLACE_WITH_DB_IDENTIFIER"]],
+        "period": 300,
+        "stat": "Average"
+      }
+    }
+  ]
+}
