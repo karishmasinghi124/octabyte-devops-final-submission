@@ -149,6 +149,6 @@ For the final submission, capture real screenshots from:
 9. CloudWatch application dashboard
 10. running application
 
-Record a short Loom video showing the repository, Terraform architecture, CI/CD run, AWS resources, monitoring, and the running application.
+I Recorded a short Loom video showing the repository, Terraform architecture, CI/CD run, AWS resources, monitoring, and the running application.
 
 The repository cannot create a real GitHub URL or Loom URL without access to those accounts, so those two links must be added to the submission email after publishing/recording.
